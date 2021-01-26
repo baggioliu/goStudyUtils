@@ -28,13 +28,16 @@ func (v *VertexI) Abs() float64 {
 }
 
 func TestInterface(){
+	fmt.Println("Enter TestInterface......................")
 	var i Abser
 	f := MyfloatI(-math.Sqrt2)
 	v := VertexI{3, 4}
 	
 	i = f
-	fmt.Println(i.Abs())
+	fmt.Println(i, i.Abs())
 	
 	i = &v
 	fmt.Println(i, i.Abs())
+	fmt.Println("Leave TestInterface......................")
+	fmt.Print()
 }

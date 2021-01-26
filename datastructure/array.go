@@ -2,11 +2,12 @@ package datastructure
 
 import (
 	"fmt"
-	"strings"
 	"strconv"
+	"strings"
 )
 
 func TestSlice() {
+	fmt.Println("Enter TestSlice......................")
 	q := []int{2, 3, 5, 7, 11, 13, 17, 19}
 	fmt.Println(q)
 	
@@ -96,6 +97,8 @@ func TestSlice() {
 	fmt.Println(strconv.ParseInt("123", 10, 32))
 	
 	fmt.Println(Pic(5, 3))
+	fmt.Println("Leave TestSlice......................")
+	fmt.Println()
 }
 
 func printSlice(s []int) {

@@ -62,6 +62,7 @@ func countdown() {
 }
 
 func main() {
+	fmt.Println("Enter main func......................")
 	fmt.Println(c, java, python, _go, s)
 	fmt.Printf("Type: %T Value: %v\n", j, j)
 	fmt.Printf("Type: %T Value: %v\n", _go, _go)
@@ -99,6 +100,7 @@ func main() {
 
 	fmt.Println("When's Saturday?")
 	today := time.Now().Weekday()
+	fmt.Println(int(today))
 	switch time.Saturday {
 	case today + 0:
 		fmt.Println("Today.")
@@ -127,7 +129,9 @@ func main() {
 	datastructure.TestPointer()
 	datastructure.TestStruct()
 	datastructure.TestStruct2()
-	
+
+	fmt.Println()
+
 	v := datastructure.Vertex{X: 1, Y: 2}
 	p := &v
 	fmt.Println(p) 
@@ -144,14 +148,16 @@ func main() {
 	fmt.Println(s1, s2)
 	s1[2] = 888
 	s2[1] = 999
-	fmt.Println(s1, s2)
+	fmt.Println(s1, s2)  //对切片的修改，会影响到底层数组
 	fmt.Println(primes)
+
+	fmt.Println()
 
 	datastructure.TestSlice()
 	datastructure.TestMap()
 	datastructure.TestMethod()
 	datastructure.TestInterface()
-	
 
+	fmt.Println("Quit main func......................")
 
 }

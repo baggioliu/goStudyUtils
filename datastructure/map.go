@@ -33,6 +33,7 @@ func compute(fn func(float64, float64) float64) float64 {
 }
 
 func TestMap() {
+	fmt.Println("Enter TestMap......................")
 	m = make(map[string]Location)
 	m["Beijing"] = Location{116.40, 39.90, Mytype{3, "Liu"}}
 	fmt.Println(m["Beijing"])
@@ -83,6 +84,8 @@ func TestMap() {
 	wcs := "x y z x y z x x x x y z z x total bin test text bin total" 
 	fmt.Println(wcs)
 	fmt.Println(WordCount(wcs))
+	fmt.Println("Leave TestMap......................")
+	fmt.Println()
 }
 
 func add() func(x int) int {
@@ -97,7 +100,7 @@ func add() func(x int) int {
 func fibonacci() func() int {
 	back1, back2 := 0, 1
 	return func() int {
-		back1, back2 = back2, (back1+back2)
+		back1, back2 = back2, back1 + back2
 		return back1
 	}
 }

@@ -34,6 +34,7 @@ func (v *VertexM) Scale(f float64) {
 }
 
 func TestMethod(){
+	fmt.Println("Enter TestMethod......................")
 	v := &VertexM{5, 12}
 	fmt.Printf("Before scaling: %+v, Abs: %v\n", v, v.Abs())
 	v.Scale(10)
@@ -44,4 +45,6 @@ func TestMethod(){
 	
 	p := &VertexM{6, 8}
 	fmt.Println(p.AbsP())
+	fmt.Println("Leave TestMethod......................")
+	fmt.Println()
 }

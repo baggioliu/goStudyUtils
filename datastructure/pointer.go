@@ -29,7 +29,7 @@ func TestPointer() {
 	i, j := 42, 81
 	
 	p := &i
-	fmt.Println(&i)
+	//fmt.Println(&i)   // &取地址即指针，*取值。
 	fmt.Println(p)   	// 指针变量p指向的内存地址
 	fmt.Println(&p)  	// &p就表示编译器为指针变量p分配的内存地址
 	fmt.Println(*p)  	// *p表示此指针指向的内存地址中存放的内容
