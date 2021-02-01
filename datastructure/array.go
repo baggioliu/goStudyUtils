@@ -39,8 +39,8 @@ func TestSlice() {
 	
 	q = q[3:]
 	printSlice(q)
-	
-	
+
+	// make([]T, length, capacity) 这里 length 是数组的长度并且也是切片的初始长度。
 	a := make([]int, 5)
 	printSlice2("a", a)
 

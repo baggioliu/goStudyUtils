@@ -5,16 +5,19 @@ import (
 	"math"
 )
 
+/* 定义接口 */
 type Abser interface{
 	Abs() float64
 }
 
 type MyfloatI float64
 
+/* 定义结构体 */
 type VertexI struct {
 	X, Y float64
 }
 
+/* 实现接口方法 */
 func (f MyfloatI) Abs() float64 {
 	if f < 0 {
 		return float64(-f)
@@ -23,6 +26,7 @@ func (f MyfloatI) Abs() float64 {
 	}
 }
 
+/* 实现接口方法 */
 func (v *VertexI) Abs() float64 {
 	return math.Sqrt(v.X*v.X + v.Y*v.Y)
 }
